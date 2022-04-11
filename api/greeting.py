@@ -46,3 +46,4 @@ class MyHTMLParser(HTMLParser):
 parser = MyHTMLParser()
 parser.feed('<html><head><title>rorororor</title></head>'
             '<body><h1>Parse me!</h1></body></html>')
+parser.get_starttag_text()
