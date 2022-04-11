@@ -29,5 +29,6 @@ class handler(BaseHTTPRequestHandler):
     f.close()
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
-    self.wfile.write(html_template.encode())
+    webbrowser.open('view.html') 
+    # self.wfile.write(html_template.encode())
     return
