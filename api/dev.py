@@ -28,7 +28,7 @@ class Handler(BaseHTTPRequestHandler):
 
 
         else:
-            language = f"Please choose the language you want to start your learning journey with! <br> Available courses: <br> Python <br> JavaScript <br> Java <br> C++ <br> Goodluck"
+            language = f"<h2>Please choose the language you want to start your learning journey with!</h2> Available courses: <br> - Python <br> - JavaScript <br> - Java <br> - C++ <br> <h2>Goodluck</h2>"
 
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
