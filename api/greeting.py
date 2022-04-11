@@ -38,9 +38,9 @@ class handler(BaseHTTPRequestHandler):
     f.close()
     webbrowser.open_new_tab('view.html')
 
-    language += f"\n Hello to our website"
+    # language += f"\n Hello to our website"
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
-    self.wfile.write(language.encode())
+    self.wfile.write(message.encode())
     return
