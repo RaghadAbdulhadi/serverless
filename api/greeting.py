@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
-import webbrowser
+from html.parser import HTMLParser
 class handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
@@ -25,22 +25,24 @@ class handler(BaseHTTPRequestHandler):
 
     else:
         language = f"Please choose the language you want to start your learning journey with! Goodluck"
-    # write-html.py
 
-    f = open('view.html','w')
-
-    message = """<html>
-    <head></head>
-    <body><p>Hello World!</p></body>
-    </html>"""
-
-    f.write(message)
-    f.close()
-    webbrowser.open_new_tab('view.html')
-
-    # language += f"\n Hello to our website"
+    language += f"\n Hello to our website"
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
-    self.wfile.write(message.encode())
+    self.wfile.write(language.encode())
     return
+
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print("Encountered a start tag:", tag)
+
+    def handle_endtag(self, tag):
+        print("Encountered an end tag :", tag)
+
+    def handle_data(self, data):
+        print("Encountered some data  :", data)
+
+parser = MyHTMLParser()
+parser.feed('<html><head><title>rorororor</title></head>'
+            '<body><h1>Parse me!</h1></body></html>')
