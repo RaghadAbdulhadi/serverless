@@ -31,5 +31,5 @@ class handler(BaseHTTPRequestHandler):
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
     self.wfile.write(language.encode())
-    self.wfile.write(bytes("<html><head><title>Title goes here.</title></head>/html>","utf-8"))
+    self.wfile.write("<html><head><title>Title goes here.</title></head></html>".encode("utf-8"))
     return
