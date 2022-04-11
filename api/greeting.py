@@ -13,7 +13,7 @@ class handler(BaseHTTPRequestHandler):
 
     if language == "Python":
         language = f"Start with us to be a successful pythoneir"
-
+        parser.get_starttag_text()
     elif language == "Java":
         language = f"Start with us to be a successful Javascripter"
 
@@ -46,4 +46,3 @@ class MyHTMLParser(HTMLParser):
 parser = MyHTMLParser()
 parser.feed('<html><head><title>rorororor</title></head>'
             '<body><h1>Parse me!</h1></body></html>')
-parser.get_starttag_text()
