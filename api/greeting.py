@@ -29,6 +29,7 @@ class handler(BaseHTTPRequestHandler):
     html_file = open(fname, 'r', encoding='utf-8')
     source_code = html_file.read() 
     print(source_code)
+    
     language += f"\n Hello to our website"
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
@@ -36,4 +37,4 @@ class handler(BaseHTTPRequestHandler):
     self.wfile.write(language.encode())
 
 
-    return source_code
+    return
