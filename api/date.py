@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler
 from datetime import datetime
 
-class handler(BaseHTTPRequestHandler):
+class Handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
     self.send_response(200)
