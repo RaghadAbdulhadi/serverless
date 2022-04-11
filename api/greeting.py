@@ -9,16 +9,16 @@ class handler(BaseHTTPRequestHandler):
     url_components = parse.urlsplit(s)
     query_string_list = parse.parse_qsl(url_components.query)
     dic = dict(query_string_list)
-    name = dic.get('name')
+    language = dic.get('language')
 
-    if name:
-        message = f"Hello {name}"
+    if language:
+        language = f"I like to study {language}"
     else:
-        message = f"Hello No body"
+        language = f"Hello No body"
 
-    message += f"\n Hello to our website"
+    language += f"\n Hello to our website"
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
-    self.wfile.write(message.encode())
+    self.wfile.write(language.encode())
     return
