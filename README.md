@@ -6,7 +6,7 @@ Vercel is a platform for frontend frameworks and static sites, built to integrat
 ## The first Endpoint
 **https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev**
 
-[Home Page](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev)
+[Home Page or Unavailable Course](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev)
 
 ![Home Page](./images/homepage.PNG)
 
@@ -20,20 +20,20 @@ Vercel is a platform for frontend frameworks and static sites, built to integrat
 ## The Third Endpoint (Query: langauge=Java)
 **https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=Java**
 
-[Python](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=Java)
+[Java](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=Java)
 
-![Python](./images/java.PNG)
+![Java](./images/java.PNG)
 
 ## The Forth Endpoint (Query: langauge=JavaScript)
 **https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=JavaScript**
 
-[Python](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=JavaScript)
+[JavaScript](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=JavaScript)
 
-![Python](./images/javascript.PNG)
+![JavaScript](./images/javascript.PNG)
 
 ## The Fifth Endpoint (Query: langauge=C-Sharp)
 **https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=C-Sharp**
 
-[Python](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=C-Sharp)
+[C#](https://serverless-d2zi5903v-raghadabdulhadi.vercel.app/api/dev?language=C-Sharp)
 
-![Python](./images/csharp.PNG)
+![C#](./images/csharp.PNG)
