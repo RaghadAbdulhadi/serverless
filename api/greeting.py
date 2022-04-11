@@ -1,5 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 from urllib import parse
+import webbrowser
 class handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
@@ -35,7 +36,8 @@ class handler(BaseHTTPRequestHandler):
 
     f.write(message)
     f.close()
-    
+    webbrowser.open_new_tab('view.html')
+
     language += f"\n Hello to our website"
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
