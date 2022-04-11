@@ -25,15 +25,15 @@ class handler(BaseHTTPRequestHandler):
     else:
         language = f"Please choose the language you want to start your learning journey with! Goodluck"
 
+    fname = "view.html"
+    html_file = open(fname, 'r', encoding='utf-8')
+    source_code = html_file.read() 
+    print(source_code)
     language += f"\n Hello to our website"
     self.send_response(200)
     self.send_header('Content-type', 'text/plain')
     self.end_headers()
     self.wfile.write(language.encode())
 
-    fname = "view.html"
-    html_file = open(fname, 'r', encoding='utf-8')
-    source_code = html_file.read() 
-    print(source_code)
 
-    return
+    return source_code
