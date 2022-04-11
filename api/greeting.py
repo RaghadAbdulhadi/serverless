@@ -11,8 +11,10 @@ class handler(BaseHTTPRequestHandler):
     dic = dict(query_string_list)
     language = dic.get('language')
 
-    if language:
-        language = f"I like to study {language}"
+    if language == "Python":
+        language = f"Start with us to be a successful pythoneir"
+    elif language == "Java":
+        language = f"Start with us to be a successful Javascripter"
     else:
         language = f"Hello No body"
 
