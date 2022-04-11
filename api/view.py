@@ -1,12 +1,12 @@
 from http.server import BaseHTTPRequestHandler
-from datetime import datetime
+import webbrowser
 
 class handler(BaseHTTPRequestHandler):
 
   def do_GET(self):
 
         # to open/create a new html file in the write mode
-    f = open('GFG.html', 'w')
+    f = open('view.html', 'w')
     
     # the html code which will go in the file GFG.html
     html_template = """<html>
